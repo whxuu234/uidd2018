@@ -1,7 +1,4 @@
 
-<html>
-<head>
-<style>
 
 html{
 	height:100%;
@@ -14,15 +11,13 @@ body {
 	background-size: cover;
 }
 
-</style>
-</head>
-<body>
-div{
-	font-size:36px;
+h1{
+	font-size:48px;
 	font-family: verdana;
 	color: white;
-    text-align: center;
-}
-
-</body>
-</html>
+    position:relative;   
+    top:150px;
+    left:500px;
+  }
+   
+  
