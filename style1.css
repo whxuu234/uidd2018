@@ -11,6 +11,7 @@ body {
 	background-size: cover;
 }
 
+<<<<<<< HEAD
 h1{
 	font-size:48px;
 	font-family: verdana;
@@ -21,3 +22,17 @@ h1{
   }
    
   
+=======
+</style>
+</head>
+<body>
+h1{
+	font-size:36px;
+	font-family: verdana;
+	color: white;
+    text-align: center;
+}
+
+</body>
+</html>
+>>>>>>> 483f2c17fc0a23b5a0c9135127f2b4a2e6b067aa
