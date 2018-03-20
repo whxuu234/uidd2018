@@ -1,0 +1,28 @@
+
+<html>
+<head>
+<style>
+
+html{
+	height:100%;
+}
+body {
+	background-image: url(2014128144337.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+}
+
+</style>
+</head>
+<body>
+div{
+	font-size:36px;
+	font-family: verdana;
+	color: white;
+    text-align: center;
+}
+
+</body>
+</html>
