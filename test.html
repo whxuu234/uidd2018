@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+    <script>
+	var a=0,b=0,c=0,d=0,e=0,f=0,g=0,r=0;
+      $(document).ready(function(){
+		 
+        $(".field1").click(function(){      
+		 if(a==0){$(this).attr("src","salt2.png");
+		 a++;
+		}
+		else if(a==1){$(this).attr("src","salt3.png");
+		 a++;
+		}
+		else if(a==2){$(this).attr("src","salt4.png");
+		 a++;
+		}
+		else if(a==3){$(this).attr("src","salt1.png");
+		 a=0;
+		}
+		});
+		
+		$(".field2").click(function(){
+		 if(b==0){$(this).attr("src","salt2.png");
+		 b++;
+		}
+		else if(b==1){$(this).attr("src","salt3.png");
+		 b++;
+		}
+		else if(b==2){$(this).attr("src","salt4.png");
+		 b++;
+		}
+		else if(b==3){$(this).attr("src","salt1.png");
+		 b=0;
+		}
+		});
+		
+		$(".field3").click(function(){
+		 if(c==0){$(this).attr("src","salt2.png");
+		 c++;
+		}
+		else if(c==1){$(this).attr("src","salt3.png");
+		 c++;
+		}
+		else if(c==2){$(this).attr("src","salt4.png");
+		 c++;
+		}
+		else if(c==3){$(this).attr("src","salt1.png");
+		 c=0;
+		}
+		});
+		
+		$(".field4").click(function(){
+		 if(d==0){$(this).attr("src","salt2.png");
+		 d++;
+		}
+		else if(d==1){$(this).attr("src","salt3.png");
+		 d++;
+		}
+		else if(d==2){$(this).attr("src","salt4.png");
+		 d++;
+		}
+		else if(d==3){$(this).attr("src","salt1.png");
+		 d=0;
+		}
+		});
+		
+		$(".field5").click(function(){
+		 if(e==0){$(this).attr("src","salt2.png");
+		 e++;
+		}
+		else if(e==1){$(this).attr("src","salt3.png");
+		 e++;
+		}
+		else if(e==2){$(this).attr("src","salt4.png");
+		 e++;
+		}
+		else if(e==3){$(this).attr("src","salt1.png");
+		 e=0;
+		}
+		});
+		
+		$(".field6").click(function(){
+		 if(f==0){$(this).attr("src","salt2.png");
+		 f++;
+		}
+		else if(f==1){$(this).attr("src","salt3.png");
+		 f++;
+		}
+		else if(f==2){$(this).attr("src","salt4.png");
+		 f++;
+		}
+		else if(f==3){$(this).attr("src","salt1.png");
+		 f=0;
+		}
+		});
+		
+		$(".th").click(function(){
+			if(g==0){
+			$(this).attr("src","toolbox.png");
+			$(this).addClass("box");
+			g++;
+			}
+			else if(g==1){
+			$(this).attr("src","th.png");
+			$(this).removeClass("box");
+			g=0;
+			}
+			
+		});
+		
+		
+      });
+     
+     
+
+    </script>
+ 
+    <style>
+      body{text-align:center;}
+      .container{
+        position:relative;
+      margin:auto;}
+      .main{
+        height:655px;
+        width:430px;
+      }
+      .field1{
+        position:absolute;
+        margin-top:268px;
+        margin-left:-430px;
+        height:189px;
+        width:140px;
+      }
+
+      .field2{
+        position:absolute;
+        margin-top:268px;
+        margin-left:-285px;
+        height:189px;
+        width:140px;
+      }
+     .field3{
+        position:absolute;
+        margin-top:268px;
+        margin-left:-140px;
+        height:189px;
+        width:140px;
+      }
+      .field4{
+        position:absolute;
+        margin-top:462px;
+        margin-left:-430px;
+        height:189px;
+        width:140px;
+      }
+      .field5{
+        position:absolute;
+        margin-top:462px;
+        margin-left:-285px;
+        height:189px;
+        width:140px;
+      }
+      .field6{
+        position:absolute;
+        margin-top:462px;
+        margin-left:-140px;
+        height:189px;
+        width:140px;
+      }
+      .th{
+        position:absolute;
+        margin-top:596px;
+        margin-left:-60px;
+        height:60px;
+        width:60px;
+      }
+	  #police{
+        position:absolute;
+		margin-top:242px;
+        height:19px;
+        width:11px;
+      }
+	  
+	  .box{
+		   position:absolute;
+        margin-top:188px;
+        margin-left:-471px;
+        height:510px;
+        width:510px;
+	  
+	  }
+
+      </style>
+  </head>
+  <body>
+    <div class="container">
+      <img class="main" src="main1.png"></img>
+      <img class="field1" src="salt1.png"></img>
+      <img class="field2" src="salt1.png"></img>
+      <img class="field3" src="salt1.png"></img>
+      <img class="field4" src="salt1.png"></img>
+      <img class="field5" src="salt1.png"></img>
+      <img class="field6" src="salt1.png"></img>
+      <img class="th" src="th.png"></img>
+      <img id="police" src="police1.png">
+   </div>
+   <script>
+	window.onload=function () {
+	 var moveE=document.getElementById("police");
+     moveE.style.margin.top=242;
+    move_on(moveE,400,1,0,50);
+}
+
+    </script>
+	<script>
+function move_on(element,far,to,cishu,time) {
+    var add=(to%2==1)?true:false;
+    var num=(to<3)?((element.style.marginLeft==="")?-420:parseInt(element.style.marginLeft)):((element.style.marginTop==="")?0:parseInt(element.style.marginTop));
+    var max=(to%2==1)?(num+far):num;
+    var min=(to%2==1)?num:(num+far);
+    var time=setInterval(function  () {
+        if(add){
+            num++;
+            (to<3)?(element.style.marginLeft=num+"px"):(element.style.marginTop=num+"px");
+            if(num>=max){
+                add=false;
+                cishu--;
+                if(cishu==0){clearInterval(time)}
+            }
+        }else{
+            num--;
+            (to<3)?(element.style.marginLeft=num+"px"):(element.style.marginTop=num+"px");
+            if(num<=min){
+                add=true;
+                cishu--;
+                if(cishu==0){clearInterval(time)}
+            }
+        }
+    },time);
+}
+</script>
+   
+</body>
+</html>
